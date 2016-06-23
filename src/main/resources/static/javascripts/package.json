@@ -1,0 +1,26 @@
+{
+  "name": "bookish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^1.13.1",
+    "angular": "^1.5.7",
+    "angular-resource": "^1.5.7",
+    "angular-route": "^1.5.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenyang/bookish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenyang/bookish/issues"
+  },
+  "homepage": "https://github.com/zhenyang/bookish#readme"
+}
