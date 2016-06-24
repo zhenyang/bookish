@@ -1,6 +1,7 @@
 var bookishApp = angular.module('bookishApp', [
     'ngRoute',
-    'bookList'
+    'bookList',
+    'bookDetail'
 ]);
 
 bookishApp.config(['$locationProvider', '$routeProvider',

@@ -1,1 +1,1 @@
-angular.module('bookDetail', []);
+angular.module('bookDetail', ['book']);

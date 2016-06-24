@@ -1,7 +1,7 @@
 <div>
     <ul>
         <li ng-repeat="book in $ctrl.books">
-            <p>{{book.title}}</p>
+            <a href="#!books/{{book.id}}">{{book.title}}</a>
             <span>{{book.author}}</span>
             <span>{{book.isbn}}</span>
             <span>{{book.asin}}</span>

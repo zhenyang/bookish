@@ -1,5 +1,5 @@
-angular.module('bookList').component(
-    'bookList', {
+angular.module('bookList')
+    .component('bookList', {
         templateUrl: 'javascripts/booklist/booklist.template.html',
         controller: ['Book',
             function BookListController(Book) {
@@ -8,5 +8,4 @@ angular.module('bookList').component(
                     self.books = response.content;
                 });
             }]
-    }
-);
+    });
