@@ -8,4 +8,12 @@
             <span>{{book.published_at}}</span>
         </li>
     </ul>
+
+    <div>
+        <ul class="pagination">
+            <li ng-repeat="n in $ctrl.pages track by $index" ng-class="{$ctrl.pageIndex == $index : active}">
+                <a href="#!books?page={{$index}}">{{$index+1}}</a>
+            </li>
+        </ul>
+    </div>
 </div>
