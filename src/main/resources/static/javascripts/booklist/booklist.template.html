@@ -1,17 +1,16 @@
 <div>
-    <ul>
-        <li ng-repeat="book in $ctrl.books">
-            <a href="#!books/{{book.id}}">{{book.title}}</a>
-            <span>{{book.author}}</span>
-            <span>{{book.isbn}}</span>
-            <span>{{book.asin}}</span>
-            <span>{{book.published_at}}</span>
+    <ul class="row book-list">
+        <li ng-repeat="book in $ctrl.books" class="col-md-4 book-item">
+            <img class="img-responsive" src="images/thumbnails/{{book.asin}}.jpg">
+            <h4><a href="#!books/{{book.id}}">{{book.title}}</a></h4>
+            <p>作者: {{book.author}}</p>
+            <p>出版日期: {{book.published_at}}</p>
         </li>
     </ul>
 
-    <div>
+    <div class="row">
         <ul class="pagination">
-            <li ng-repeat="n in $ctrl.pages track by $index" ng-class="{$ctrl.pageIndex == $index : active}">
+            <li ng-repeat="n in $ctrl.pages track by $index" ng-class="{'active' : $ctrl.pageIndex == $index}">
                 <a href="#!books?page={{$index}}">{{$index+1}}</a>
             </li>
         </ul>

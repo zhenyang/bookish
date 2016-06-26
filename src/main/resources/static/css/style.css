@@ -1,0 +1,9 @@
+.book-item {
+    list-style: none;
+}
+
+.book-item img {
+    height: 220px;
+    display: block;
+    margin: 20px auto;
+}

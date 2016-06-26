@@ -3,7 +3,7 @@ angular.module('bookList').component('bookList', {
     controller: ['$routeParams', 'Book',
         function BookListController($routeParams, Book) {
             var self = this;
-            self.pageIndex = $routeParams.page || 1;
+            self.pageIndex = $routeParams.page || 0;
             self.pageSize = 12;
             Book.query(
                 {page: self.pageIndex, size: self.pageSize},
