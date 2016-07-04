@@ -1,4 +1,4 @@
-package com.tw.bookish;
+package com.tw.bookish.controller;
 
 import com.tw.bookish.model.Book;
 import com.tw.bookish.repository.BookRepository;
