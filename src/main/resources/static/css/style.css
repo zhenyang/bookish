@@ -1,5 +1,6 @@
 .book-item {
     list-style: none;
+    height: 350px;
 }
 
 .book-item img {
